@@ -2,24 +2,24 @@
 version: 1
 project:
   id: 7204695b-7485-4989-863c-16cf6e4db155
-  title: Template
+  title: MyST demo
   # description:
   # keywords: []
   authors: [Freek Pols]
-  github: https://github.com/TUD-SEEd/template # Change this URL to your GitHub repository
+  github: https://github.com/timonidema/mystdemo # Change this URL to your GitHub repository
   downloads:
-    - id: output-pdf
+    - id: MySTdemo-pdf
   exports:
     - format: pdf
       template: plain_latex_book 
-      output: exports/book.pdf
-      id: output-pdf
+      output: exports/MySTdemo.pdf
+      id: MySTdemo-pdf
   # To autogenerate a Table of Contents, run "myst init --write-toc"
 site:
   template: book-theme
   options:
     favicon: favicon.ico
-    logo: Figuren/site_logo.png
+    logo: Figuren/TUDelft.svg
     folders: false
   actions:
     - title: report issue
