@@ -1,14 +1,14 @@
 ---
-title: Template
+title: MyST demo
 site:
-  hide_outline: true
-  hide_toc: true
+  hide_outline: false
+  hide_toc: false
   hide_title_block: true
 ---
 
 <div style="text-align: center">
 
-# Template
+# MyST demo
 
 </div>
 

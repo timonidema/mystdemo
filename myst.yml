@@ -5,7 +5,7 @@ project:
   title: MyST demo
   # description:
   # keywords: []
-  authors: [Freek Pols]
+  authors: [Freek Pols, Timon Idema]
   github: https://github.com/timonidema/mystdemo # Change this URL to your GitHub repository
   downloads:
     - id: MySTdemo-pdf
