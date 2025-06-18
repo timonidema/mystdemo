@@ -1,33 +1,50 @@
-# Markdown (Cheatsheet)
+---
+title: MarkDown cheatsheet (NL)
+subject: Tutorial
+short_title: MarkDown cheatsheet
+label: MDcsNL
+authors:
+    - name: Freek Pols
+      affiliations:
+      - TU Delft
+      orcid: 0000-0002-4690-6460
+    - name: Timon Idema
+      affiliations:
+      - TU Delft
+      orcid: 0000-0002-8901-5342
+license: CC-BY-4.0
+---
 
-Markdown is een eenvoudige opmaaktaal: platte tekst die *opgemaakt* wordt met kleine stukjes 'code'. Die tekst is vervolgens snel te exporteren naar allerlei andere formats zoals pdf, word, html etc.
+# MarkDown cheatsheet (NL)
 
-```{figure} ../Figuren/MyST.PNG
+MarkDown is een eenvoudige opmaaktaal: platte tekst die *opgemaakt* wordt met kleine stukjes 'code'. Die tekst is vervolgens snel te exporteren naar allerlei andere formats zoals pdf, word, html etc.
+
+```{figure} ../Figures/MyST.PNG
 :width:80%
 
-Een Jupyter Book gemaakt met MyST vraagt een collectie van markdown en jupyter notebooks die vervolgens geëxporteerd kunnen worden naar pdf, html maar ook word.
+Een Jupyter Book gemaakt met MyST vraagt een collectie van MarkDown en Jupyter notebooks die vervolgens geëxporteerd kunnen worden naar pdf, html maar ook word.
 ```
 
 ## Structuur
-We kunnen hier onderscheid maken in twee structuren: die van de inhoud van de boek (een collectie van verschillende documenten), en de (interne)structuur van de hoofdstukken.
+We kunnen hier onderscheid maken in twee structuren: die van de inhoud van het boek (een collectie van verschillende documenten), en de (interne)structuur van de hoofdstukken.
 
 ### Table of Contents
 De software waar we gebruik van maken bouwt zelf een inhoudsopgave (Table of contents, ookwel ToC). Dat gaat op alfabetische volgorde. Maar je kunt ook zelf de ToC specificeren. Dit kan wel het beste door offline te werken (myst init --toc), zie de [documentatie van MyST](https://mystmd.org/guide/table-of-contents#toc-format-legacy). 
 
 ### Hoofdstukken
-Om onderscheid te maken tussen hoofdstuk, sectie en subsectie (en verder) wordt er gewerkt met aantal `#`, zie hieronder.
+Om onderscheid te maken tussen hoofdstuk, paragraaf en subparagraaf (en verder) wordt er gewerkt met aantal `#`, zie hieronder.
 
 ```markdown
 # H1 hoofdstuk  
-## H1.1 sectie   
-### H1.1.3 subsectie  
+## H1.1 paragraaf   
+### H1.1.3 subparagraaf
 ```
 
 ```{tip}
-Nummer je hoofdstukken en sectie niet! Dit gebeurt automatisch.
+Nummer je hoofdstukken en paragraafen niet! Dit gebeurt automatisch.
 ```
 
-Een nieuwe regel krijg je door of een harde enter en een witregel, of door een \ achter de zin en een enter of door twee spaties achter de zin.
+Een nieuwe regel krijg je door een `\` achter de zin en een enter of door twee spaties achter de zin. Een enter plus een witregel begint een nieuwe paragraaf.
 
 
 ### Nieuwe regel
@@ -35,7 +52,7 @@ Een nieuwe regel krijg je door of een harde enter en een witregel, of door een \
 :::{tab-item} list
 Een nieuwe regel met dubbele spatie.  
 Een nieuwe regel met een `\`.\
-Een niet regel met een harde enter en witregel.
+Een nieuwe alinea met een harde enter en witregel.
 
 Einde oefening.
 En een voorbeeld als de vorige regel niet eindigt met bovenstaande.
@@ -44,7 +61,7 @@ En een voorbeeld als de vorige regel niet eindigt met bovenstaande.
 ```markdown
 Een nieuwe regel met dubbele spatie.  
 Een nieuwe regel met een `\`.\
-Een nieuw regel met een harde enter en witregel.
+Een nieuwe alinea met een harde enter en witregel.
 
 Einde oefening.
 En een voorbeeld als de vorige regel niet eindigt met bovenstaande.
@@ -58,44 +75,50 @@ Markdown is een opmaaktaal waarbij de formatting van de tekst gedaan wordt met k
 
 | Element | Syntax | Voorbeeld | 
 | --- | --- | --- |
-| Bold | `**dik gedrukte tekst**` | **Bold** |
-| Italic | `*italics*` | *Italics*
-| Emphasis | `***emphasis***` | ***emphasis*** |
-| in line Formule | `$F = m \cdot a$` | $F = m \cdot a$ |
-| Super en subscript | ``H{sub}`2`O, and 4{sup}`th` of July`` | H{sub}`2`O, and 4{sup}`th` of July|
-| Footnote | ` - A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.`|- A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.| 
+| Vet | `**dik gedrukte tekst**` | **Bold** |
+| Cursief | `*italics*` | *Italics*
+| Nadruk | `***emphasis***` | ***emphasis*** |
+| Inline formule | `$F = m \cdot a$` | $F = m \cdot a$ |
+| Super- en subscript | ``H{sub}`2`O, and 4{sup}`th` of July`` | H{sub}`2`O, and 4{sup}`th` of July|
+| Voetnoot | ` - A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.`|- A footnote reference[^myref] \ [^myref]: This is an auto-numbered footnote definition.| 
 
 
-### Lijsten optie 1
+### Genummerde lijsten
 ::::{tab-set}
 :::{tab-item} list
-1. item 1
+1. item 1.
 1. item 2.
 1. item 3.
+    1. subitem 3.1
 :::
 :::{tab-item} syntax
 ```markdown
-1. item 1
+1. item 1.
 1. item 2.
 1. item 3.
+    1. subitem 3.1
 ```
 :::
+<hr/>Genummerde lijst. Een item wordt aangegeven door cijfer plus punt (`1.`). Het maakt niet uit welk cijfer je gebruikt.
 ::::
 
-### Lijsten optie 2
+### Ongenummerde lijsten
 ::::{tab-set}
 :::{tab-item} list
-1. item 1
-2. item 2.
-3. item 3.
+* item 1
+* item 2.
+    - subitem 2.1
+* item 3.
 :::
 :::{tab-item} syntax
 ```markdown
-1. item 1
-2. item 2.
-3. item 3.
+* item 1
+* item 2.
+    - subitem 2.1
+* item 3.
 ```
 :::
+<hr/>Ongenummerde lijst. Het maakt niet uit welk symbool je gebruikt (`*` of `-`).
 ::::
 
 ### Tabbladen
@@ -117,13 +140,13 @@ Hier tekst in tab 2
 :::{tab-item} list
 - [x] Een markdown cheatsheet maken
 - [x] Online zetten
-- [] Laten testen
+- [ ] Laten testen
 :::
 :::{tab-item} syntax
 ```markdown
 - [x] Een markdown cheatsheet maken
 - [x] Online zetten
-- [] Laten testen
+- [ ] Laten testen
 ```
 :::
 ::::
@@ -131,15 +154,17 @@ Hier tekst in tab 2
 
 ## Formules
 
-Voor de betavakken zijn wiskundige vergelijkingen essentieel. Ook in JB's kun je vergelijkingen opnemen. Wat in LaTeX kan, kan in JB ook, bijv:
+Voor de betavakken zijn wiskundige vergelijkingen essentieel. Gelukkig kun je LaTeX opnemen in MarkDown, bijvoorbeeld:
 
-$$ F_{res} = m \cdot a$$ (eq:Newton)
+$$ F_\mathrm{res} = m \cdot a$$ (eq:Newton)
 
-Waarbij gelabelde vergelijkingen, zoals {eq}`eq:Newton` naar verwezen kan worden. 
+Waarbij je kunt verwijzen naar gelabelde vergelijkingen, zoals vergelijking&nbsp;{eq}`eq:Newton`. Het format voor een dergelijke vergelijking is:
 
 `$$ Vergelijking $$`
 
-Maar je kunt ook inline vergelijkingen opnemen zoals deze: $s=v_{gem}t$. Daarbij gebruik je een enkele dollar teken voor en na je `$ Vergelijking $`
+Een van de nieuwe features van Jupyter book 2.0 is dat een link naar een vergelijking of figuur een 'hover' krijgt als je je muispointer boven de link houdt.
+
+Je kunt ook inline vergelijkingen opnemen zoals deze: $ s = v_\mathrm{gem} t $. Daarbij gebruik je een enkele dollar teken voor en na je `$ Vergelijking $`
 
 
 |Naam|Script|Symbolen|
@@ -147,16 +172,16 @@ Maar je kunt ook inline vergelijkingen opnemen zoals deze: $s=v_{gem}t$. Daarbij
 |wortel|`\sqrt{4}`|$\sqrt{4}$|
 |macht|`^{2x}`|$^{2x}$|
 |breuk|`\frac{2}{3}`|$\frac{2}{3}$|
-|subscript|`_{gem}`|$_{gem}$
-|superscript|`^{N}`|$^{N}$|
+|subscript|`x_\mathrm{gem}`|$x_\mathrm{gem}$
+|superscript|`x^{N}`|$x^{N}$|
 |vermenigvuldig|`\cdot`|$\cdot$|
 
 Met wat voorbeelden:
 |Naam|Script|Output|
 |---|---|---|
 |Afgeleide|`\frac{\Delta f}{\Delta t}`|$\frac{\Delta f}{\Delta t}$|
-|Integraal|`\int_a^b dx`|$\int_a^b dx$|
-|sinus|`sin(x)`|$sin(x)$|
+|Integraal|`\int_a^b x^2 \,\mathrm{d}x`|$\int_a^b x^2 \,\mathrm{d}x$|
+|sinus|`\sin(x)`|$\sin(x)$|
 
 Uitgebreider: https://en.wikibooks.org/wiki/LaTeX/Mathematics
 
@@ -208,6 +233,7 @@ Een site / boek kan natuurlijk niet zonder figuren. Er zijn grofweg twee maniere
 :label: fig_sunset
 :width: 70%
 :align: center
+:alt: Zonsondergang op het strand
 
 Met een mooi onderschrift
 ```
@@ -221,6 +247,7 @@ Met een mooi onderschrift
 :label: fig1
 :width: 70%
 :align: center
+:alt: Zonsondergang op het strand
 
 Met een mooi onderschrift
 ```
@@ -238,6 +265,7 @@ Tabellen worden gemaakt met scheidingsteken `|`
 ::::{tab-set}
 :::{tab-item} Tabellen
 
+
 ```
 |Kop 1|Kop 2|Kop3|
 |---|---|---|
@@ -250,7 +278,9 @@ Tabellen worden gemaakt met scheidingsteken `|`
 :::{tab-item} MyST Syntax
 
 ````markdown
-```
+```{table}
+:label: tabelvoorbeeld
+
 |Kop 1|Kop 2|Kop3|
 |---|---|---|
 |tekst 1|tekst 2|tekst 3|
@@ -261,20 +291,21 @@ Tabellen worden gemaakt met scheidingsteken `|`
 :::
 ::::
 
-Of via ...
+Of met `list-table`:
 
 ::::{tab-set}
 :::{tab-item} Tabellen
 
 ```{list-table} Overzicht van sancties bij bepaald gedrag
 :header-rows: 1
-:name:tl_ sancties
+:label: tl_sancties
+
 * - Gedrag
-    - Sanctie bij 1e keer
-    - Sanctie bij 2e keer
+  - Sanctie bij 1e keer
+  - Sanctie bij 2e keer
 * - Niet (tijdig of met een geldige reden) afgemeld 
-    - Een penalty                                       
-    - uitsluiting              
+  - Een penalty                               
+  - Uitsluiting
 ```
 
 :::
@@ -284,23 +315,24 @@ Of via ...
 ````markdown
 ```{list-table} Overzicht van sancties bij bepaald gedrag
 :header-rows: 1
-:name: tl_sancties
+:label: tl_sancties
+
 * - Gedrag
-    - Sanctie bij 1e keer
-    - Sanctie bij 2e keer
+  - Sanctie bij 1e keer
+  - Sanctie bij 2e keer
 * - Niet (tijdig of met een geldige reden) afgemeld 
-    - Een penalty                                       
-    - uitsluiting              
+  - Een penalty                               
+  - Uitsluiting             
 ``` 
 ````
 
 :::
 ::::
 
-Methode 2 heeft als voordeel de mogelijkheid tot refereren naar {numref}`Tabel {number} <tl_sancties>`
+Methode 2 heeft als voordeel de mogelijkheid tot refereren naar {numref}`Tabel %s <tl_sancties>`. Uiteraard kan dit ook met methode 1, gebruik daarvoor een `{table}` omgeving.
 
 
-## YouTube
+## YouTube videos
 Voor het embedden van YouTube filmpjes op de site heb je de embed YT link nodig. De code wordt dan:
 
 ::::{tab-set}
@@ -324,8 +356,8 @@ Een superleuke video van het project [Show the Physics](https://interactivetextb
 :::
 ::::
 
-```{warning} YT in pdf
-De embedded YT filmpjes worden niet opgenomen in de pdf. Een oplossing zou bijv. een qr code opnemen kunnen zijn.
+```{warning} Videos in pdf
+De embedded YouTube filmpjes worden niet opgenomen in de pdf. Een oplossing zou  een qr code opnemen kunnen zijn.
 ```
 
 (sec-ref)=

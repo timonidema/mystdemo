@@ -1,0 +1,4 @@
+/* Make list items in exercise labeled by letters rather than numbers. */
+.px-4 ol {
+    list-style-type: lower-alpha;
+}
