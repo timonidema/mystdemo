@@ -31,6 +31,7 @@ project:
     - file: Content/03A-MDcheatsheatNL.md
     #- file: Content/03B-MDcheatsheatEN.md
     - file: Content/04-mechanicsforces.md
+    - file: Content/05-interactivemarkdown.md
     - title: Test files
       children:
       - file: Testfiles/10-MarkDownTest.md
@@ -41,10 +42,10 @@ site:
   options:
     favicon: favicon.ico
     logo: Figures/TUDelft.svg
-    logo-dark: Figures/TUDelft-dark.svg
+    logo_dark: Figures/TUDelft-dark.svg
     style: ./TI.css
   actions:
     - title: report issue
-      url: https://github.com/TUD-SEEd/template/issues
+      url: https://github.com/timonidema/mystdemo/issues
 
 
