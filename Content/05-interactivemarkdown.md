@@ -1,6 +1,7 @@
 ---
 kernelspec:
     name: python3
+    language: python
     display_name: 'Python 3.13'
 ---
 (ch:interactivemarkdown)=
@@ -11,6 +12,7 @@ kernelspec:
 
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import fsolve
 ```
 
 ## Test plot
@@ -46,12 +48,13 @@ combined with the common tangent construction to obtain the densities of coexist
 
 ```{code-cell} python
 :tags: [hide-input]
+:label: fig:free_energy_density
 
-%config InlineBackend.figure_formats = ['svg']
+#%config InlineBackend.figure_formats = ['svg']
 #import numpy as np
 #import matplotlib.pyplot as plt
 #from myst_nb import glue
-from scipy.optimize import fsolve
+#from scipy.optimize import fsolve
 
 # Global parameters
 kbt = 1 # --> all energy (f, a, ...) in units of k_B T
@@ -150,8 +153,7 @@ ax.set_xlabel(r'density $\rho$'), ax.set_ylabel(r'free energy density $f$')
 ax.set_xlim([0, rho[-1]])
 ax.set_ylim([-0.4, 0.05])
 
-fig.savefig("test.png")
-plt.show()
+fig.savefig("fVdW.png")
 
 # Save graph to load in figure later (special Jupyter Book feature)
 #glue("free_energy_density", fig, display=False)

@@ -31,10 +31,10 @@ project:
     - file: Content/03A-MDcheatsheatNL.md
     #- file: Content/03B-MDcheatsheatEN.md
     - file: Content/04-mechanicsforces.md
-    #- file: Content/05-interactivemarkdown.md
-    - title: Test files
-      children:
-      - file: Testfiles/10-MarkDownTest.md
+    - file: Content/05-interactivemarkdown.md
+    #- title: Test files
+    #  children:
+    #  - file: Testfiles/10-MarkDownTest.md
     - file: Content/99-credits.md
     
 site:
