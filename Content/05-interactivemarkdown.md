@@ -179,6 +179,7 @@ We can make the plot in {numref}`fig:free_energy_density` even more useful by ma
 ```{code-cell} ipython3
 :tags: [remove-input]
 
+%pip install plotly
 import plotly.graph_objects as go
 
 def f_vdw_doubleprime(rho, a, b):
