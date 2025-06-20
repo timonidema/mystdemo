@@ -11,6 +11,10 @@ project:
       - TU Delft
     orcid: 0000-0002-8901-5342
   github: https://github.com/timonidema/mystdemo # Change this URL to your GitHub repository
+
+  jupyter:
+    lite: true
+    
   downloads:
     - id: MySTdemo-pdf
   exports:
