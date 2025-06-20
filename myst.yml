@@ -21,6 +21,8 @@ project:
   numbering:
     title: true
     headings: true
+    figure: 
+      continue: true
 
   # To autogenerate a Table of Contents, run "myst init --write-toc"
   toc:
