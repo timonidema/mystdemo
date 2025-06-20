@@ -10,7 +10,7 @@ The simplest content one can put in a book is plain text. Sections containing on
 * hyperlinks,
 * bulleted and numbered lists,
 * **bold** and *italic* text,
-* footnotes<sup>[^1]</sup>,
+* footnotes [^1],
 * block quotes,
 * inline images (e.g. the MarkDown logo below).
 
