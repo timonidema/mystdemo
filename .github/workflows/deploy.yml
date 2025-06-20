@@ -40,18 +40,63 @@ jobs:
         uses: teatimeguest/setup-texlive-action@v3
         with:
           packages: |  
-            scheme-basic
-            xetex
-            latexmk
-            hyperref
-            microtype
-            caption
-            xcolor
-            changepage
+            adjustbox            
             amsfonts
-            enumitem
-            framed
+            amsmath    
+            amssymb
+            amsthm
+            authblk
+            babel
+            background
             booktabs
+            caption
+            changepage
+            curvenote
+            datetime
+            doi
+            enumitem
+            fancyhdr
+            fancyvrb  
+            float
+            fmtcount
+            fontawesome5
+            fontenc
+            framed
+            framed
+            geometry
+            glossaries
+            graphbox
+            graphicx
+            hyperref
+            hyperref
+            inputenc
+            latexmk
+            lineno
+            lipsum
+            lmodern
+            mdframed
+            microtype
+            natbib
+            needspace
+            newfloat
+            nicefrac
+            pdfcol
+            preprint
+            scalerel
+            scheme-basic
+            sidecap
+            tcolorbox
+            tikz
+            times
+            titlesec   
+            txfonts
+            ulem       
+            url
+            varwidth  
+            xcolor
+            xetex
+            xkeyval
+            zref
       - name: Build PDF Assets
         run: myst build --pdf      
       - name: Build HTML Assets
