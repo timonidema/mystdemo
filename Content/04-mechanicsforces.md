@@ -1,7 +1,9 @@
 ---
 numbering:
-    math:
-        enumerator: 5.%s
+    equations:
+        enumerator: 4.%s
+    figure:
+        enumerator: 4.%s
 ---
 (ch:forces)=
 # Conversion example: Forces
