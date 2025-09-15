@@ -4,6 +4,8 @@ numbering:
         enumerator: 4.%s
     figure:
         enumerator: 4.%s
+    exercise:
+        enumerator: 4.%s
 ---
 (ch:forces)=
 # Conversion example: Forces
@@ -326,33 +328,33 @@ A suspended sign (example of a calculation in statics). (a) Problem setting. (b)
 ---
 **Solution**
 1. We first draw a free-body diagram, {numref}`fig:suspendedsign`b. Force balance on the sign tells us that the tensions in the two lower wires add up to the gravitational force on the sign. The rod is stationary, so we know that the sum of the torques on it must vanish. To get torques, we first need a pivot; we pick the point where the rod is anchored to the wall. We then have three forces contributing a clockwise torque, and one contributing a counterclockwise torque. We're not told exactly where the wires are attached to the rod, but we are told that the configuration is symmetric and that the center of mass of the sign aligns with that of the rod. Let the first wire be a distance $\alpha L$ from the wall, and the second a distance $(1-\alpha)L$. The total (clockwise) torque due to the gravitational force on the sign and rod is then given by:
-```{math}
-\tau_\mathrm{z} = \frac12 m g L + \frac12 M g \alpha L + \frac12 M g (1-\alpha) L = \frac12 (m+M)gL.
-```
-The counterclockwise torque comes from the tension in the wire, and is given by 
-```{math}
-\tau_\mathrm{wire} = F_\mathrm{T} \sin\theta L = F_\mathrm{T} (h/\sqrt{h^2+L^2}) L.
-```
-Equating the two torques allows us to solve for&nbsp;$h$ as a function of $F_\mathrm{T}$, as requested, which gives:
-```{math}
-h^2 = \left(\frac12 \frac{(m+M)g}{F_\mathrm{T}} \right)^2 (h^2 + L^2) \quad \rightarrow \quad h = \frac{(m+M)gL}{\sqrt{4 F_\mathrm{T}^2 - (m+M)^2 g^2}}.
-```
-We find the minimum value of $h$ by substituting $F_\mathrm{T} = T_\mathrm{max}$.
+    ```{math}
+    \tau_\mathrm{z} = \frac12 m g L + \frac12 M g \alpha L + \frac12 M g (1-\alpha) L = \frac12 (m+M)gL.
+    ```
+    The counterclockwise torque comes from the tension in the wire, and is given by 
+    ```{math}
+    \tau_\mathrm{wire} = F_\mathrm{T} \sin\theta L = F_\mathrm{T} (h/\sqrt{h^2+L^2}) L.
+    ```
+    Equating the two torques allows us to solve for&nbsp;$h$ as a function of $F_\mathrm{T}$, as requested, which gives:
+    ```{math}
+    h^2 = \left(\frac12 \frac{(m+M)g}{F_\mathrm{T}} \right)^2 (h^2 + L^2) \quad \rightarrow \quad h = \frac{(m+M)gL}{\sqrt{4 F_\mathrm{T}^2 - (m+M)^2 g^2}}.
+    ```
+    We find the minimum value of $h$ by substituting $F_\mathrm{T} = T_\mathrm{max}$.
 1. As the rod is stationary, all forces on it must cancel. In the horizontal direction, we have the horizontal component of the tension, $T_\mathrm{max} \cos\theta$ to the left, which must equal the horizontal component of the force exerted by the wall, $F_\mathrm{w} \cos\phi$. In the vertical direction, we have the gravitational force and the two forces from the wires on which the sign hangs in the downward direction, and the vertical component of the tension in the wire in the upward direction, the sum of which must equal the vertical component of the force exerted by the wall (which may point either up or down). We thus have
-```{math}
-\begin{align*}
-F_\mathrm{w} \cos\phi &= T_\mathrm{max} \cos\theta, \\
-F_\mathrm{w} \sin\phi &= (m+M)g + T_\mathrm{max} \sin\theta,
-\end{align*}
-```
-where $\tan\theta = h/L$ and $h$ is given in the answer to (a). We find that
-```{math}
-\begin{align*}
-F_\mathrm{w}^2 &= T_\mathrm{max}^2 + 2 (m+M)g T_\mathrm{max} \sin\theta + (m+M)^2 g^2, \\
-\tan \phi &= \frac{T_\mathrm{max} \cos\theta}{(m+M)g + T_\mathrm{max} \sin\theta}.
-\end{align*}
-```
-Note that the above expressions give the complete answer (magnitude and direction). We could eliminate $h$ and $\theta$, but that'd just be algebra, leading to more complicated expressions, and not very useful in itself. If we'd been asked to calculate the height or force for any specific values of $M$, $m$, and $L$, we could get the answers easily by substituting the numbers in the expressions given here.
+    ```{math}
+    \begin{align*}
+    F_\mathrm{w} \cos\phi &= T_\mathrm{max} \cos\theta, \\
+    F_\mathrm{w} \sin\phi &= (m+M)g + T_\mathrm{max} \sin\theta,
+    \end{align*}
+    ```
+    where $\tan\theta = h/L$ and $h$ is given in the answer to (a). We find that
+    ```{math}
+    \begin{align*}
+    F_\mathrm{w}^2 &= T_\mathrm{max}^2 + 2 (m+M)g T_\mathrm{max} \sin\theta + (m+M)^2 g^2, \\
+    \tan \phi &= \frac{T_\mathrm{max} \cos\theta}{(m+M)g + T_\mathrm{max} \sin\theta}.
+    \end{align*}
+    ```
+    Note that the above expressions give the complete answer (magnitude and direction). We could eliminate $h$ and $\theta$, but that'd just be algebra, leading to more complicated expressions, and not very useful in itself. If we'd been asked to calculate the height or force for any specific values of $M$, $m$, and $L$, we could get the answers easily by substituting the numbers in the expressions given here.
 ````
 
 (sec:eomsolutions)=
@@ -528,5 +530,5 @@ A drag racer or dragster&nbsp;[^9], CC BY-SA 3.0.
 1. On which of the wheels is the frictional force the largest?
 1. The frictional force is maximized if the wheels just don't slip (because, as usual, the coefficient of kinetic friction is smaller than that of static friction). Find the maximal possible frictional force on the rear wheels.
 1. Find the maximal possible acceleration of the dragster.
-1. For a coefficient of (static) friction of 1.0 (a fairly realistic value for rubber and concrete) and a track of 500&nbsp;m, find the maximal velocity a drag racer can achieve at the end of the track when starting from rest.
+1. For a coefficient of (static) friction of $1.0$ (a fairly realistic value for rubber and concrete) and a track of 500&nbsp;m, find the maximal velocity a drag racer can achieve at the end of the track when starting from rest.
 ````
