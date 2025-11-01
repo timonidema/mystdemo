@@ -8,7 +8,7 @@ kernelspec:
 # Interactive content in MarkDown
 
 ```{code-cell} python
-:tag: remove-cell
+:tags: remove-cell
 
 import matplotlib.pyplot as plt
 import numpy as np
