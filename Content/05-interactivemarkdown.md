@@ -10,6 +10,11 @@ jupyter:
 
 ```{code-cell} python
 :tags: [hide-input]
+
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.optimize import fsolve
+
 print(2+3)
 ```
 
@@ -17,17 +22,15 @@ print(2+3)
 ## Test plot
 ```{code-cell} python
 :tags: [hide-input]
-# Data for plotting
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.optimize import fsolve
+
 
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2 * np.pi * t)
 
 plt.figure()
 plt.plot(t,s,'k.')
-#fig.savefig("test.png")
+plt.xlabel('t')
+plt.ylabel('s')
 plt.show()
 ```
 
@@ -145,7 +148,7 @@ ax.text(rhosol[0], 0.01, r'$\rho_1$')
 ax.text(rhosol[1], 0.01, r'$\rho_2$')
 
 # Labels
-ax.set_xlabel(r'density $\rho$'), ax.set_ylabel(r'free energy density $f$')
+ax.set_xlabel(f'density $\rho$'), ax.set_ylabel(f'free energy density $f$')
 
 # Limits
 ax.set_xlim([0, rho[-1]])
@@ -277,10 +280,10 @@ fig.update_layout(
     legend_title="Legend",
 )
 
-fig.update_xaxes(title_text=r'density $\rho$', range=[rho[0], rho[-1]])
+fig.update_xaxes(title_text=f'density $\rho$', range=[rho[0], rho[-1]])
 
 # Update yaxis properties
-fig.update_yaxes(title_text=r'free energy density $f$', range=[-1, 0])
+fig.update_yaxes(title_text=f'free energy density $f$', range=[-1, 0])
 
 fig
 ```
