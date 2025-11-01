@@ -148,7 +148,7 @@ ax.text(rhosol[0], 0.01, r'$\rho_1$')
 ax.text(rhosol[1], 0.01, r'$\rho_2$')
 
 # Labels
-ax.set_xlabel(f'density $\rho$'), ax.set_ylabel(f'free energy density $f$')
+ax.set_xlabel(r'density $\rho$'), ax.set_ylabel(r'free energy density $f$')
 
 # Limits
 ax.set_xlim([0, rho[-1]])
@@ -280,7 +280,7 @@ fig.update_layout(
     legend_title="Legend",
 )
 
-fig.update_xaxes(title_text=f'density $\rho$', range=[rho[0], rho[-1]])
+fig.update_xaxes(title_text=r'density $\rho$', range=[rho[0], rho[-1]])
 
 # Update yaxis properties
 fig.update_yaxes(title_text=f'free energy density $f$', range=[-1, 0])
