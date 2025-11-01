@@ -19,6 +19,9 @@ from scipy.optimize import fsolve
 ```{code-cell} python
 :tags: [remove-input]
 # Data for plotting
+import numpy as np
+import matplotlib.pyplot as plt
+
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2 * np.pi * t)
 
@@ -29,7 +32,7 @@ ax.set(xlabel='time (s)', ylabel='voltage (mV)',
        title='Waves in Time')
 ax.grid()
 
-fig.savefig("test.png")
+#fig.savefig("test.png")
 plt.show()
 ```
 
