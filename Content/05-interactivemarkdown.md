@@ -1,8 +1,9 @@
 ---
-kernelspec:
+jupyter:
+  kernelspec:
     name: python3
     language: python
-    display_name: 'Python 3.13'
+    display_name: Python 3
 ---
 (ch:interactivemarkdown)=
 # Interactive content in MarkDown
