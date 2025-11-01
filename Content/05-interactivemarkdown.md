@@ -8,6 +8,11 @@ kernelspec:
 # Interactive content in MarkDown
 
 ```{code-cell} python
+:tags: [hide-input]
+print(2+3)
+```
+
+```{code-cell} python
 :tags: remove-cell
 
 import matplotlib.pyplot as plt
