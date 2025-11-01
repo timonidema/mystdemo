@@ -42,7 +42,7 @@ jobs:
           # If you have a requirements file, prefer that:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           # Minimum needed for execution:
-          pip install ipykernel jupyter-client
+          pip install jupyter-server nbclient nbformat ipykernel jupyter-client
           # Common plotting libs (adjust to your stack):
           pip install matplotlib numpy pandas scipy
           # If you use plotly static images:
