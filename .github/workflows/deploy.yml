@@ -44,14 +44,14 @@ jobs:
           # Minimum needed for execution:
           pip install jupyter-server nbclient nbformat ipykernel jupyter-client
           # Common plotting libs (adjust to your stack):
-          pip install matplotlib numpy pandas scipy
+          pip install matplotlib numpy pandas scipy plotly
           # If you use plotly static images:
           # pip install plotly kaleido
           # Make sure a kernel is visible:
           python -m ipykernel install --user --name=python3
 
-      - name: Set headless Matplotlib
-        run: echo "MPLBACKEND=Agg" >> $GITHUB_ENV
+     # - name: Set headless Matplotlib
+     #   run: echo "MPLBACKEND=Agg" >> $GITHUB_ENV
         
       # Book things    
       - name: Setup Pages
