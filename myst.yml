@@ -15,7 +15,7 @@ project:
   github: https://github.com/timonidema/mystdemo # Change this URL to your GitHub repository
 
   jupyter:
-    lite: true
+    execute: true
     
   downloads:
     - id: MySTdemo-pdf
