@@ -20,17 +20,13 @@ print(2+3)
 # Data for plotting
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy.optimize import fsolve
 
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2 * np.pi * t)
 
-fig, ax = plt.subplots()
-ax.plot(t, s)
-
-ax.set(xlabel='time (s)', ylabel='voltage (mV)',
-       title='Waves in Time')
-ax.grid()
-
+plt.figure()
+plt.plot(t,s,'k.')
 #fig.savefig("test.png")
 plt.show()
 ```
