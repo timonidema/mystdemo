@@ -44,7 +44,7 @@ jobs:
           # Minimum needed for execution:
           pip install ipykernel jupyter-client
           # Common plotting libs (adjust to your stack):
-          pip install matplotlib numpy pandas
+          pip install matplotlib numpy pandas scipy
           # If you use plotly static images:
           # pip install plotly kaleido
           # Make sure a kernel is visible:
