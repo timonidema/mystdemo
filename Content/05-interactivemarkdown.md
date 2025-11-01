@@ -13,20 +13,13 @@ jupyter:
 print(2+3)
 ```
 
-```{code-cell} python
-:tags: remove-cell
-
-import matplotlib.pyplot as plt
-import numpy as np
-from scipy.optimize import fsolve
-```
 
 ## Test plot
 ```{code-cell} python
-:tags: [remove-input]
+:tags: [hide-input]
 # Data for plotting
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
 
 t = np.arange(0.0, 2.0, 0.01)
 s = 1 + np.sin(2 * np.pi * t)
