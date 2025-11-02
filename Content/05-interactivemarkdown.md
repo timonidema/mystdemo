@@ -34,6 +34,13 @@ plt.ylabel('s')
 plt.show()
 ```
 
+::::{myst}
+:::{code-cell} python
+print(2+3)
+:::
+::::
+
+
 ## Plots
 
 In a printed book, graphs can be included as figures. We can do the same in an online book, but we can also do much more. The simplest extension is to not create a figure file, which we then include, but to create the figure from code. The upshot of this approach is that students can see how the figure is made. For example, {numref}`fig:free_energy_density` below shows the van der Waals free energy density, 
